@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
 {% block body %}
-<img src="https://preview.redd.it/jcg60obacbqc1.gif?width=216&crop=smart&format=png8&s=b49e2839bf2fb7460553b97fb031eb3622d750b8" alt="">
+<div class="grid place-items-center text-white">
+    <h1 class="text-2sm">Let me give you some meme!</h1>
+    <p>Here is your meme! This will change in 30 seconds!</p>
+    <img class="shadow-gray-50 border-zinc-50  object-scale-down max-h-full drop-shadow-md m-auto"src="{{ meme_pic }}" alt="meme pic">
+    <p class="text-2sm">Current Subreddit: {{ subreddit }}</p>
+</div>
 {% endblock %}
